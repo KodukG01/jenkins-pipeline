@@ -5,10 +5,7 @@ pipeline {
     environment {
         courrse = "Jenkins"
     }
-    options {
-        timeout(time: 30, unit: 'seconds')
-    }
-
+  
     stages {
         stage('Build') {
             steps {
