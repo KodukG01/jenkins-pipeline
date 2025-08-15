@@ -6,7 +6,7 @@ pipeline {
         courrse = "Jenkins"
     }
     options {
-        timeout(time: 10, unit: 'seconds')
+        timeout(time: 30, unit: 'seconds')
     }
 
     stages {
@@ -15,7 +15,7 @@ pipeline {
                 script {
                     echo 'Building..'
                     sh 'echo "Build step executed"'
-                    sleep 10
+                    
                 }
             }
         }
