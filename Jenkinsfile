@@ -2,7 +2,7 @@ pipeline {
     agent  {
         label 'AGENT-1'
     }
-    envvironment {
+    environment {
         courrse = "Jenkins"
     }
 
