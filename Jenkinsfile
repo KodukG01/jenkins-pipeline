@@ -2,6 +2,9 @@ pipeline {
     agent  {
         label 'AGENT-1'
     }
+    envvironment {
+        courrse = "Jenkins"
+    }
 
     stages {
         stage('Build') {
