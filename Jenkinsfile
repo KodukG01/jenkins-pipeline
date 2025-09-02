@@ -19,4 +19,18 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            echo "Say hello"
+            deleteDir()
+        }
+        success{
+            echo "pipeline is success"
+        }
+        failure{
+            echo "pipeline is failure"
+        }
+
+    }
 }
