@@ -2,6 +2,12 @@ pipeline {
     agent {
         label 'roboshop-dev'
     }
+    environment{
+        course = 'jenkins'
+    }
+    options {
+        time(time: 1, unit: 'HOURS')
+    }
     stages {
         stage('Build') {
             steps {
