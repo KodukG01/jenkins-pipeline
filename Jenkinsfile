@@ -6,7 +6,7 @@ pipeline {
         course = 'jenkins'
     }
     options {
-        time(time: 1, unit: 'HOURS')
+        timeout(time: 1, unit: 'HOURS')
     }
     stages {
         stage('Build') {
