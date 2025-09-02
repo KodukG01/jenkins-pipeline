@@ -8,7 +8,8 @@ pipeline {
                 script {
                     sh """
                      echo 'Building..'
-                     
+                     env
+
                      """
                 }
                
